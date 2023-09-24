@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box !important;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* main - Heading */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-heading {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #191919;
+  height: 10vh;
+  color: #fff;
+}
+
+.socialMedia button {
+  background-color: #191919;
+  color: white;
+  border: none;
+}
+
+.socialMedia img {
+  width: 30px;
+  height: 27px;
+  font-size: 4rem;
+}
+
+.icon {
+  background-color: white;
+  margin: 0.3rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.lastIcon {
+  margin-right: 1rem;
+}
+
+.heading-tilte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131312;
+  width: auto;
+  height: 9vh;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-bottom: 0;
+}
+
+.web-title {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#hrTAg {
+  background-size: contain;
+  border: none;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* header */
+header {
+  height: 100vh !important;
+  border: 1px solid black;
+  background-color: #131312;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header li {
+  list-style: none;
+}
+
+select {
+  width: 200px;
+  background-color: #131312;
+  color: white;
+}
+
+.header-img {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.imgBg {
+  background-image: url('./images/boy1.png');
+  background-size:  100% auto;
+  background-repeat: no-repeat;
+  height: 85.6vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-content{
+  position: relative;
+}
+
+.fresh {
+  position: absolute;
+  width: 30%; 
+  left: 5%; 
+  top: 5%; 
+}
+
+.twoTwo {
+  position: absolute;
+  width: 30%; 
+  left: 20%; 
+  top: 25%; 
+}
+
+.look {
+  position: absolute;
+  width: 30%; 
+  left: 10%; 
+  top: 40%;
+}
+
+@media screen and (min-width:600px) and (max-width:698px)  {
+  .twoTwo {
+    position: absolute;
+    width: 30%; 
+    left: 20%; 
+    top: 14%; 
   }
-  to {
-    transform: rotate(360deg);
+  
+  .look {
+    position: absolute;
+    width: 30%; 
+    left: 10%; 
+    top: 20%;
   }
+}
+
+@media screen and (min-width:400px) and (max-width:600px)  {
+  .twoTwo {
+    position: absolute;
+    width: 30%; 
+    left: 20%; 
+    top: 12%; 
+  }
+  
+  .look {
+    position: absolute;
+    width: 30%; 
+    left: 10%; 
+    top: 18%;
+  }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .twoTwo {
+    position: absolute;
+    width: 30%; 
+    left: 10%; 
+    top: 11%;
+  }
+  
+  .look {
+    position: absolute;
+    width: 30%; 
+    left: 10%; 
+    top: 16%;
+  }
+}
+
+.seeMore {
+  position: relative;
+  top: -100px;
+  left: 50px;
+  background-color: #131312;
+  color: white;
+  border: 1px solid white;
+}
+
+
+.dataImg {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.dataDesc {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.dataTitle {
+  margin: 10px;
+}
+
+.main-Product-Heading {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.lineinPd {
+  width: 40vw;
+  background-color: #131312;
+}
+
+.footer {
+  height: 60vh;
+  background-color: #262626;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+input {
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #262626;
+  width: 400px;
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
+  color: #fff;
+}
+
+.footerText {
+  position: relative;
+  background-color: #262626;
+  width: 65%;
+  height: 40%;
+  margin-left: 10%;
+}
+
+.sendBtn{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 73%;
+  top:-145px;
+  overflow: hidden;
+}
+.footerBottomeText{
+  background-color:#131312;
+  color: white;
+  padding: 4px;
+}
+
+.menuIcon{
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  font-size: 2.3rem !important;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.mediaQuery-nav{
+  width: 100vw;
+  background-color: #131312;
+  /* background-color: green; */
+  position: relative;
+  height: 100vh;
 }
