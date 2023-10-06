@@ -102,66 +102,66 @@ select {
 
 .imgBg {
   background-image: url('./images/boy1.png');
-  background-size:  100% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   height: 85.6vh;
   width: 100%;
   overflow: hidden;
 }
 
-.header-content{
+.header-content {
   position: relative;
 }
 
 .fresh {
   position: absolute;
-  width: 30%; 
-  left: 5%; 
-  top: 5%; 
+  width: 30%;
+  left: 5%;
+  top: 5%;
 }
 
 .twoTwo {
   position: absolute;
-  width: 30%; 
-  left: 20%; 
-  top: 25%; 
+  width: 30%;
+  left: 20%;
+  top: 25%;
 }
 
 .look {
   position: absolute;
-  width: 30%; 
-  left: 10%; 
+  width: 30%;
+  left: 10%;
   top: 40%;
 }
 
-@media screen and (min-width:600px) and (max-width:698px)  {
+@media screen and (min-width:600px) and (max-width:698px) {
   .twoTwo {
     position: absolute;
-    width: 30%; 
-    left: 20%; 
-    top: 14%; 
+    width: 30%;
+    left: 20%;
+    top: 14%;
   }
-  
+
   .look {
     position: absolute;
-    width: 30%; 
-    left: 10%; 
+    width: 30%;
+    left: 10%;
     top: 20%;
   }
 }
 
-@media screen and (min-width:400px) and (max-width:600px)  {
+@media screen and (min-width:400px) and (max-width:600px) {
   .twoTwo {
     position: absolute;
-    width: 30%; 
-    left: 20%; 
-    top: 12%; 
+    width: 30%;
+    left: 20%;
+    top: 12%;
   }
-  
+
   .look {
     position: absolute;
-    width: 30%; 
-    left: 10%; 
+    width: 30%;
+    left: 10%;
     top: 18%;
   }
 }
@@ -170,15 +170,15 @@ select {
 @media screen and (min-width: 300px) and (max-width: 400px) {
   .twoTwo {
     position: absolute;
-    width: 30%; 
-    left: 10%; 
+    width: 30%;
+    left: 10%;
     top: 11%;
   }
-  
+
   .look {
     position: absolute;
-    width: 30%; 
-    left: 10%; 
+    width: 30%;
+    left: 10%;
     top: 16%;
   }
 }
@@ -256,21 +256,22 @@ input:focus {
   margin-left: 10%;
 }
 
-.sendBtn{
+.sendBtn {
   height: 100px;
   width: 100px;
   position: relative;
   left: 73%;
-  top:-145px;
+  top: -145px;
   overflow: hidden;
 }
-.footerBottomeText{
-  background-color:#131312;
+
+.footerBottomeText {
+  background-color: #131312;
   color: white;
   padding: 4px;
 }
 
-.menuIcon{
+.menuIcon {
   margin-right: 1rem;
   margin-top: 0.5rem;
   font-size: 2.3rem !important;
@@ -278,10 +279,19 @@ input:focus {
   cursor: pointer;
 }
 
-.mediaQuery-nav{
+.mediaQuery-nav {
   width: 100vw;
   background-color: #131312;
   /* background-color: green; */
   position: relative;
   height: 100vh;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 0 20px;
 }
